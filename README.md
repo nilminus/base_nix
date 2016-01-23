@@ -1,6 +1,6 @@
 # Installation
 ```sh
-git clone https://github.com/nilminus/Ubuntu_Kali.git
-cd Ubuntu_Kali/
+git clone https://github.com/nilminus/base_nix.git
+cd base_nix
 ./install.sh
 ```
