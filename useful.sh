@@ -13,7 +13,7 @@ sudo apt-get update
 sudo apt-get install -y google-chrome-stable
 
 # Install C helpers
-sudo apt-get install -y cscope exuberant-ctags cflow
+sudo apt-get install -y cscope exuberant-ctags cflow splint
 
 # Install general stuff
 sudo apt-get install -y socat
