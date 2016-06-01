@@ -40,6 +40,8 @@ if $RC; then
     cp ./dotfiles/vimrc ~/.vimrc
     cp ./dotfiles/bashrc ~/.bashrc
     cp ./dotfiles/pythonrc ~/.pythonrc
+    cp ./dotfiles/screenrc ~/.screenrc
+
     # Install vim plugins
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     vim +PluginInstall +qall
