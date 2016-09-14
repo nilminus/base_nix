@@ -28,6 +28,7 @@ ask QIRA "Install QIRA environment? (y/n):"
 
 if $USEFUL; then
     echo "USEFUL"
+    chmod +x useful.sh
     ./useful.sh
 fi
 
