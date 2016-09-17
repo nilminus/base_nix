@@ -25,6 +25,7 @@ sudo pip install pwntools
 sudo pip install git+https://github.com/Gallopsled/pwntools#egg=pwntools --upgrade
 sudo pip install capstone --upgrade
 sudo pip install ropgadget --upgrade
+sudo pip install angr
 echo "Setting useful gdbinit scripts..."
 echo "set disassembly-flavor intel" >> ~/.gdbinit
 echo "set follow-fork-mode child" >> ~/.gdbinit
