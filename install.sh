@@ -50,6 +50,7 @@ fi
 
 if $CTF; then
     echo "CTF"
+    chmod +x ctf_tools.sh
     ./ctf_tools.sh
 fi
 
