@@ -57,10 +57,10 @@ fi
 if $QIRA; then
     # Install qira
     # TOFIX for i386
-    git clone https://github.com/BinaryAnalysisPlatform/qira.git ~/qira
-    sudo wget -O /usr/share/keyrings/ubuntu-archive-keyring.gpg http://archive.ubuntu.com/ubuntu/project/ubuntu-archive-keyring.gpg
-    ~/qira/install.sh
-    ~/qira/fetchlibs.sh
+    #git clone https://github.com/BinaryAnalysisPlatform/qira.git ~/qira
+    #sudo wget -O /usr/share/keyrings/ubuntu-archive-keyring.gpg http://archive.ubuntu.com/ubuntu/project/ubuntu-archive-keyring.gpg
+    #~/qira/install.sh
+    #~/qira/fetchlibs.sh
 fi
 
 if $ZSH; then
