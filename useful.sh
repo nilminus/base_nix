@@ -30,6 +30,14 @@ sudo easy_install pip
 # Install powerline
 sudo pip install powerline-status
 
+# virtualenv
+pip install virtualenv      # Not installed already?
+pip install virtualenvwrapper
+export WORKON_HOME=~/Envs
+mkdir -p $WORKON_HOME
+source /usr/local/bin/virtualenvwrapper.sh
+mkdir -p ~/tools
+
 # Install git complete
 sudo apt-get install -y git bash-completion
 # Install Fonts
