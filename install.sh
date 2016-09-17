@@ -23,7 +23,7 @@ ask ZSH "Install ZSH environment? (y/n):"
 ask USEFUL "Install Useful stuff (tmux and google chrome)? (y/n):"
 ask RC "Overwrite rc files? (y/n):"
 ask CTF "Install CTF environment? (y/n):"
-ask QIRA "Install QIRA environment? (y/n):"
+#ask QIRA "Install QIRA environment? (y/n):"
 
 
 if $USEFUL; then
