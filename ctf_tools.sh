@@ -17,8 +17,8 @@ sudo apt-get install -y netcat-traditional
 
 # Install GDB peda
 cd ~/
-git clone https://github.com/longld/peda.git ~/peda
-echo "source ~/peda/peda.py" >> ~/.gdbinit
+git clone https://github.com/longld/peda.git ~/tools/peda
+echo "source ~/tools/peda/peda.py" >> ~/.gdbinit
 echo "DONE! debug your program with gdb and enjoy"
 
 sudo pip install pwntools
