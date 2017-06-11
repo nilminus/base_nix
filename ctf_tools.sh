@@ -21,6 +21,11 @@ git clone https://github.com/longld/peda.git ~/tools/peda
 echo "source ~/tools/peda/peda.py" >> ~/.gdbinit
 echo "DONE! debug your program with gdb and enjoy"
 
+# Broken maybe do this?
+#easy_install --upgrade distribute
+#easy_install --upgrade pip
+
+
 sudo pip install pwntools
 sudo pip install git+https://github.com/Gallopsled/pwntools#egg=pwntools --upgrade
 sudo pip install capstone --upgrade
