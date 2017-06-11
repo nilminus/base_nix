@@ -67,6 +67,10 @@ if $ZSH; then
     sudo apt-get -y install zsh
     sudo apt-get -y install fortune cowsay
     sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-    echo "Remember to run: chsh -s $(which zsh)"
+    chsh -s $(which zsh)
+    
+    # Give me colors
+    wget https://raw.github.com/trapd00r/LS_COLORS/master/LS_COLORS -O $HOME/.dircolors
+    echo 'eval $(dircolors -b $HOME/.dircolors)' >> $HOME/.zshrc
 fi
 
