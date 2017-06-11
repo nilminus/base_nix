@@ -60,9 +60,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'sgur/unite-everything'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
 
 call vundle#end()            " required
 
@@ -91,21 +88,3 @@ nnoremap <space><space>  :<C-u>Unite -start-insert file_rec/async<cr>
 nmap <Leader>z :Ag <c-r>=expand("<cword>")<cr><cr>
 nnoremap <space>/ :Ag
 
-
-"""" neosnipper """
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
-
-" SuperTab like snippets behavior.
-"imap <expr><TAB>
-" \ pumvisible() ? "\<C-n>" :
-" \ neosnippet#expandable_or_jumpable() ?
-" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-
-" For conceal markers.
-if has('conceal')
-  set conceallevel=2 concealcursor=niv
-endif
