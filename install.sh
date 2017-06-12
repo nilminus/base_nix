@@ -23,7 +23,6 @@ ask ZSH "Install ZSH environment? (y/n):"
 ask USEFUL "Install Useful stuff (tmux and google chrome)? (y/n):"
 ask RC "Overwrite rc files? (y/n):"
 ask CTF "Install CTF environment? (y/n):"
-#ask QIRA "Install QIRA environment? (y/n):"
 
 
 if $USEFUL; then
@@ -52,15 +51,6 @@ if $CTF; then
     echo "CTF"
     chmod +x ctf_tools.sh
     ./ctf_tools.sh
-fi
-
-if $QIRA; then
-    # Install qira
-    # TOFIX for i386
-    #git clone https://github.com/BinaryAnalysisPlatform/qira.git ~/qira
-    #sudo wget -O /usr/share/keyrings/ubuntu-archive-keyring.gpg http://archive.ubuntu.com/ubuntu/project/ubuntu-archive-keyring.gpg
-    #~/qira/install.sh
-    #~/qira/fetchlibs.sh
 fi
 
 if $ZSH; then
