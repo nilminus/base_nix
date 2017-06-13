@@ -51,8 +51,6 @@ Plugin 'Shougo/unite.vim'
 Plugin 'rking/ag.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'sgur/unite-everything'
-Plugin 'Shougo/vimproc.vim'
-Plugin 'Shougo/vimshell.vim'
 
 call vundle#end()            " required
 
