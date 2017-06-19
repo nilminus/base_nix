@@ -16,6 +16,10 @@ sudo apt-get install -y google-chrome-stable
 # Install C helpers
 sudo apt-get install -y cscope exuberant-ctags cflow splint
 
+# Install nodejs && npm
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+apt-get install nodejs
+
 # Install general stuff
 sudo apt-get install -y socat
 sudo apt-get install -y samba smbclient cifs-utils
