@@ -1,5 +1,6 @@
 # ~/.pythonrc
 # enable syntax completion
+# export PYTHONSTARTUP=$HOME/.pythonrc.py
 try:
     import readline
 except ImportError:
