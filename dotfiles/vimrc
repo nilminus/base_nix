@@ -22,8 +22,8 @@ set wildmenu
 set autoindent               "newline in same place
 set smarttab
 set expandtab                "help tabstop & help expandtab
-set tabstop=4                "tab=4space
-set shiftwidth=4             ">>,<< for 4space
+set tabstop=2                "tab=2space
+set shiftwidth=2             ">>,<< for 2space
 set bs=2                     "open the backspace
 
 set tags+=~/tags             "read ctags from ~/tags
