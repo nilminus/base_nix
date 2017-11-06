@@ -12,6 +12,7 @@ language message en_US.UTF-8
 
 set nu                       "set line number
 set ru                       "ruler
+set rnu
 syntax on                    "syntax highlighting 
 set paste                    "set paste
 set cul                      "cursorline highlighting
