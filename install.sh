@@ -41,6 +41,7 @@ if $RC; then
     cp ./dotfiles/bashrc ~/.bashrc
     cp ./dotfiles/pythonrc ~/.pythonrc
     cp ./dotfiles/screenrc ~/.screenrc
+    cp ./dotfiles/zshrc ~/.zshrc
 
     # Install vim plugins
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

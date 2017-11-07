@@ -1,0 +1,5 @@
+export ZSH=~/.oh-my-zsh
+
+ZSH_THEME="avit"
+plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
+source $ZSH/oh-my-zsh.sh
