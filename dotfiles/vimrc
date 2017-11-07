@@ -31,6 +31,13 @@ set tags+=~/tags             "read ctags from ~/tags
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
 
+# Allow resizing inside xterm
+set mouse+=a
+if &term =~ '^screen'
+    " tmux knows the extended mouse mode
+    set ttymouse=xterm2
+endif
+
 " 256 color for terminal
 set t_Co=256
 let g:solarized_termcolors=256
