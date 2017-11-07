@@ -12,7 +12,6 @@ language message en_US.UTF-8
 
 set nu                       "set line number
 set ru                       "ruler
-set rnu
 syntax on                    "syntax highlighting 
 set paste                    "set paste
 set cul                      "cursorline highlighting
@@ -23,17 +22,20 @@ set wildmenu
 set autoindent               "newline in same place
 set smarttab
 set expandtab                "help tabstop & help expandtab
-set tabstop=2                "tab=2space
-set shiftwidth=2             ">>,<< for 2space
+set tabstop=2                "tab=4space
+set shiftwidth=2             ">>,<< for 4space
 set bs=2                     "open the backspace
 
 set tags+=~/tags             "read ctags from ~/tags
+
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
 
 " 256 color for terminal
 set t_Co=256
 let g:solarized_termcolors=256
 set background=dark
-colorscheme peachpuff
+colorscheme darkblue
 set term=screen-256color
 
 " Vundlel
