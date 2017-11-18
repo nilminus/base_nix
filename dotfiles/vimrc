@@ -56,8 +56,7 @@ endif
 
 call plug#begin()
 Plug 'Shougo/deoplete.nvim'
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'tpope/vim-dispatch'
 Plug 'gmarik/Vundle.vim'
 Plug 'godlygeek/tabular'
 Plug 'scrooloose/syntastic'
