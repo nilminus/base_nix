@@ -48,20 +48,16 @@ set background=dark
 colorscheme peachpuff
 set term=screen-256color
 
-" Vundlel
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-
-Plugin 'gmarik/Vundle.vim'
-Plugin 'godlygeek/tabular'
-Plugin 'scrooloose/syntastic'
-Plugin 'majutsushi/tagbar'
-Plugin 'junegunn/fzf.vim'
-
-call vundle#end()            " required
+call plug#begin()
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'gmarik/Vundle.vim'
+Plug 'godlygeek/tabular'
+Plug 'scrooloose/syntastic'
+Plug 'majutsushi/tagbar'
+Plug 'junegunn/fzf.vim'
+call plug#end()
 
 "" Remap for Tagbar!
 :map <Leader>m :TagbarToggle<CR>
