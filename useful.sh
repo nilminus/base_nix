@@ -2,7 +2,8 @@
 
 echo "UPGRADE"
 # Update everything
-echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" > /etc/apt/sources.list
+echo "Appending apt sources !"
+echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get -y upgrade
 
