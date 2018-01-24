@@ -1,22 +1,25 @@
-filetype plugin indent on
+syntax enable                   "syntax highlighting
+" set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 scriptencoding utf-8
 set hidden
-set encoding=utf-8    
+set encoding=utf-8
 set langmenu=en_US.UTF-8
 language message en_US.UTF-8
 
 set nu                       "set line number
 set ru                       "ruler
-syntax on                    "syntax highlighting 
-set paste                    "set paste
+set rnu                       "ruler
 set cul                      "cursorline highlighting
 set scrolloff=5              "the minimal screen line above/below the cursor
 set laststatus=2             "always show the status bar
 set wildmenu
 
-set autoindent               "newline in same place
-set smarttab
+"set autoindent               "newline in same place
+"set smarttab
 set expandtab                "help tabstop & help expandtab
 set tabstop=2                "tab=4space
 set shiftwidth=2             ">>,<< for 4space
