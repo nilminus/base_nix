@@ -53,13 +53,12 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-Plug 'Shougo/deoplete.nvim'
-Plug 'tpope/vim-dispatch'
 Plug 'gmarik/Vundle.vim'
 Plug 'godlygeek/tabular'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'junegunn/fzf.vim'
+Plug 'fatih/vim-go'
 call plug#end()
 
 "" Remap for Tagbar!
