@@ -1,0 +1,6 @@
+Plugin 'shougo/deoplete.nvim'
+Plugin 'deoplete-plugins/deoplete-clang'
+Plugin 'roxma/nvim-yarp'
+Plugin 'roxma/vim-hug-neovim-rpc'
+Plugin 'prabirshrestha/async.vim'
+Plugin 'prabirshrestha/vim-lsp'
