@@ -1,76 +1,57 @@
-syntax enable                   "syntax highlighting
-" set smartindent
+" Enable syntax highlighting
+syntax on
+
+" Set file type plugin and indentation
+filetype plugin indent on
+
+" Enable line numbers
+set number
+set relativenumber   " Show relative line numbers
+
+" Set tab width to 4 spaces for C++
 set tabstop=4
 set shiftwidth=4
 set expandtab
 
-scriptencoding utf-8
-set hidden
-set encoding=utf-8
-set langmenu=en_US.UTF-8
-language message en_US.UTF-8
+" Enable auto indentation
+set autoindent
+set smartindent
 
-set nu                       "set line number
-set ru                       "ruler
-set rnu                       "ruler
-set cul                      "cursorline highlighting
-set scrolloff=5              "the minimal screen line above/below the cursor
-set laststatus=2             "always show the status bar
-set wildmenu
+" Enable code folding
+set foldmethod=syntax    " Fold based on syntax
+set foldlevelstart=99    " Start with all folds open
 
-"set autoindent               "newline in same place
-"set smarttab
-set expandtab                "help tabstop & help expandtab
-set tabstop=2                "tab=4space
-set shiftwidth=2             ">>,<< for 4space
-set bs=2                     "open the backspace
+" Enable auto-completion
+set completeopt=menuone,noinsert,noselect
+set shortmess+=c
 
-"set tags=./tags,tags;
-set tags=./tags;/
-"set tags+=~/tags             "read ctags from ~/tags
+" Enable search highlighting
+set ignorecase           " Ignore case in search patterns
+set smartcase            " Override ignorecase if search pattern contains uppercase
+set hlsearch
+set incsearch
 
+" Enable line wrapping
+set nowrap
+
+" Set color scheme
+colorscheme desert
+
+" Enable mouse support
+set mouse=a
+
+" Show matching parentheses
+set showmatch
+
+" Map keys for faster navigation
 nnoremap <C-n> :bnext<CR>
-nnoremap <C-p> :bprevious<CR>
+nnoremap <C-p> :bprev<CR>
 
-" Allow resizing inside xterm
-set mouse+=a
-if &term =~ '^screen'
-    " tmux knows the extended mouse mode
-    set ttymouse=xterm2
-endif
+" Set C++ specific settings
+autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
 
-" 256 color for terminal
-set t_Co=256
-let g:solarized_termcolors=256
-set background=dark
-colorscheme peachpuff
-set term=screen-256color
+" Highlight the current line
+set cursorline
 
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-call plug#begin()
-Plug 'gmarik/Vundle.vim'
-Plug 'godlygeek/tabular'
-Plug 'scrooloose/syntastic'
-Plug 'majutsushi/tagbar'
-Plug 'junegunn/fzf.vim'
-Plug 'fatih/vim-go'
-call plug#end()
-
-"" Remap for Tagbar!
-:map <Leader>m :TagbarToggle<CR>
-
-"" netrw sweetness
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
-""augroup ProjectDrawer
-""  autocmd!
-""  autocmd VimEnter * :Vexplore
-""augroup END
+" Key mappings to save / compile code
+nnoremap <F5> :w<CR>:!clang++ -g -o %:r % -O0<CR>
