@@ -8,6 +8,9 @@ filetype plugin indent on
 set number
 "set relativenumber   " Show relative line numbers
 
+" Word wrap ?
+set wrap
+
 " Set tab width to 4 spaces for C++
 set tabstop=4
 set shiftwidth=4
