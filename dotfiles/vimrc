@@ -6,7 +6,7 @@ filetype plugin indent on
 
 " Enable line numbers
 set number
-set relativenumber   " Show relative line numbers
+"set relativenumber   " Show relative line numbers
 
 " Set tab width to 4 spaces for C++
 set tabstop=4
